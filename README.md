@@ -35,7 +35,9 @@ UseMemo, UseReducer, UseContext was used
     ### Options
 
     Pass toast type as the second parameter to the add method
+
     Options: info, success, warning, error
+
     Default: info
 
 ## Credit
