@@ -5,6 +5,7 @@ UseMemo, UseReducer, UseContext was used
 ### How to use
 
 1.  Clone app
+
 2.  Import toastProvider and wrap around app
 
     ### Example
@@ -26,19 +27,17 @@ UseMemo, UseReducer, UseContext was used
 
     const toast = useToast();
 
-    toast.add("I am awesome","error");
+    toast.success("I am awesome");
 
     ### You can pass a string array to the add method
 
-    toast.add(["I am awesome", "That's true"],"success");
+    toast.error(["I am awesome", "That's true"]);
 
-    ### Options
+    ### Methods
 
-    Pass toast type as the second parameter to the add method
+    Available methods are
 
-    Options: info, success, warning, error
-
-    Default: info
+    info, success, warning, error
 
 ## Credit
 

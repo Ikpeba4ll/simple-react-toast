@@ -33,6 +33,23 @@ function withToastProvider(Component) {
 
       console.log(toasts);
     };
+
+    const warning = (content) => {
+      add(content, "warning");
+    };
+
+    const success = (content) => {
+      add(content, "success");
+    };
+
+    const error = (content) => {
+      add(content, "error");
+    };
+
+    const info = (content) => {
+      add(content, "info");
+    };
+
     const remove = (id) => {
       dispatch({
         type: "REMOVE",
@@ -40,7 +57,7 @@ function withToastProvider(Component) {
       });
     };
     const providerValue = useMemo(() => {
-      return { add, remove };
+      return { success, error, warning, info, remove };
     }, [toasts]);
 
     return (

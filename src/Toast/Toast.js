@@ -5,7 +5,7 @@ function Toast({ children, remove, type }) {
   removeRef.current = remove;
 
   useEffect(() => {
-    const duration = 500000;
+    const duration = 5000;
     const id = setTimeout(() => removeRef.current(), duration);
     return () => clearTimeout(id);
   }, []);
